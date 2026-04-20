@@ -57,14 +57,6 @@ echo charDetector ($palabras ,'a') ? "true" : "false";
 
 echo "<br>" . (charDetector ($palabras ,'z') ? "true" : "false");
 
-
-
-
-
-
-
-
-
 echo "<h3> PARTE 4</h3>";
 
 //imprimimos el array asociativo ya creado//
