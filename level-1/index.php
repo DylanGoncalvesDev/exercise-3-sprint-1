@@ -1,7 +1,14 @@
 <?php
-//arrays//
+//declaracion del array//
 $numeros = [10,5,7,3,20];
+//array indexado 6 elementos//
 $languages = ["PHP", "HTML", "CSS", "Java", "JavaScript", "Python"];
+//array asociativo sobre mi//
+$aboutMe = [ "Name" => "Dylan" , "Age" => 21 , "Email" => "dylanphx93@gmail.com", "Favorite Food" => "Pizza"];
+//array de palabras//
+$palabras = ["hola", "clase", "manzana", "java", "hablar", "teclado", "maleta", "pantalla", "hacer", "cable"];
+//caracter//
+$char = '';
 
 echo "<h3> PARTE 1</h3>";
 
@@ -35,4 +42,34 @@ foreach ($languages as $language) {
 }
 
 echo "<h3> PARTE 3</h3>";
+//detectar caracteres//
+function charDetector ($palabras , $char) {
+    $resultado = true;
+    foreach ($palabras as $palabra) {
+       if (stripos($palabra, $char) === false ) {
+           $resultado = false;
+       }
+    }
+    return $resultado; 
+}
+
+echo charDetector ($palabras ,'a') ? "true" : "false";
+
+echo "<br>" . (charDetector ($palabras ,'z') ? "true" : "false");
+
+
+
+
+
+
+
+
+
+echo "<h3> PARTE 4</h3>";
+
+//imprimimos el array asociativo ya creado//
+foreach ($aboutMe as $key => $value) {
+         echo $key . ":  " . $value . "<br>";
+}
+
 ?> 
