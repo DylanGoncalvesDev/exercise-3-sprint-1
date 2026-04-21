@@ -8,7 +8,7 @@ $aboutMe = [ "Name" => "Dylan" , "Age" => 21 , "Email" => "dylanphx93@gmail.com"
 //array de palabras//
 $palabras = ["hola", "clase", "manzana", "java", "hablar", "teclado", "maleta", "pantalla", "hacer", "cable"];
 //caracter//
-$char = '';
+$char = "";
 
 echo "<h3> PARTE 1</h3>";
 
@@ -43,7 +43,7 @@ foreach ($languages as $language) {
 
 echo "<h3> PARTE 3</h3>";
 //detectar caracteres//
-function charDetector ($palabras , $char) {
+function detectarChar ( array $palabras , string $char): bool {
     $resultado = true;
     foreach ($palabras as $palabra) {
        if (stripos($palabra, $char) === false ) {
